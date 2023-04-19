@@ -640,6 +640,7 @@ fn main() {
         "\x1b[38;2;{};{};{}m\n\n\n\t\t\t\t\t\t\t1: Default\n\n\t\t\t\t\t\t\t2: Manual Color Changing Mode\n\n\n\n \x1b[0m",
         r, g, b
     );
+    print!("\n\nYour Input here: ");
     io::stdout().flush().unwrap();
 
     let mut usr = String::new();
@@ -660,7 +661,6 @@ fn main() {
         2 => manual_m(),
         _ => println!("Put in a value that is from 1-2"),
     }
-
 
 }
 
